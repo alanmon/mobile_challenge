@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medbuddy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Example" >
+        <activity
+            android:name="com.example.medbuddy.ActivityLogin"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.C_mainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_c_main"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.P_childList"
+            android:label="@string/title_activity_p_child_list" >
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.P_childContralPanel"
+            android:label="@string/title_activity_p_child_contral_panel"
+            android:parentActivityName="com.example.medbuddy.P_childList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medbuddy.P_childList" />
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.Medication"
+            android:label="@string/title_activity_medication"
+            android:parentActivityName="com.example.medbuddy.P_childList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medbuddy.P_childList" />
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.Reward"
+            android:label="@string/title_activity_reward"
+            android:parentActivityName="com.example.medbuddy.P_childList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medbuddy.P_childList" />
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.History"
+            android:label="@string/title_activity_history"
+            android:parentActivityName="com.example.medbuddy.P_childList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medbuddy.P_childList" />
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.Quicklog"
+            android:label="@string/title_activity_quicklog" >
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.Profile"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.Activity_p_add_child"
+            android:label="@string/title_activity_activity_p_add_child" >
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.Add_Medication"
+            android:label="@string/title_activity_add__medication" >
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.RewardShop"
+            android:label="@string/title_activity_reward_shop"
+            android:parentActivityName="com.example.medbuddy.C_mainActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medbuddy.C_mainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.R_event"
+            android:label="@string/title_activity_r_event" >
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.R_hairs"
+            android:label="@string/title_activity_r_hairs" >
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.C_quiz"
+            android:label="@string/title_activity_c_quiz"
+            android:parentActivityName="com.example.medbuddy.C_mainActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medbuddy.C_mainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.R_teeth"
+            android:label="@string/title_activity_r_teeth" >
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.R_teeths"
+            android:label="@string/title_activity_r_teeths" >
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.R_eyes"
+            android:label="@string/title_activity_r_eyes" >
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.R_hats"
+            android:label="@string/title_activity_r_hats" >
+        </activity>
+        <activity
+            android:name="com.example.medbuddy.Add_Reward"
+            android:label="@string/title_activity_add__reward" >
+        </activity>
+    </application>
+
+</manifest>
